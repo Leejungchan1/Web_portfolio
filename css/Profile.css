@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* wrap ------------------- */
+.wrap{
+    width: 100%;
+}
+
+/* main_page ------------------- */
+.main_page{
+    width: 80%;
+    height: 85%;
+    background-color: aqua;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    opacity: 0.8;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/* wrap ------------------- */
+.wrap{
+    width: 100%;
+}
+
+/* main_page ------------------- */
+.main_page{
+    width: 80%;
+    height: 85%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    padding: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.move_box{
+    overflow: hidden;
+}
+
+
+.main_page > div{
+    width: 24%;
+    height: 80%;
+    background-color: #3004B4;
+    opacity: 0.5;
+    border-radius: 20px;
+    color: white;
+}
+
+.main_page >div:hover{
+    opacity: 1;
+    box-shadow: 0 0 100px #0102DE;
+}
+
+.main_page > div a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid rgb(143, 42, 146); */
+    padding: 50px;
+}
+
+.main_page > div a h2{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main_page *::before, /* * 모든 */
+.main_page *::after{
+    transition: all 0.4s ease;
+}
+
+.main_page .effect{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main_page .effect div{
+    width: 100%;
+    height: 100%;
+}
+
+.main_page .effect::before,
+.main_page .effect::after{
+    content: "";
+    width: 6px;
+    height: 600px;
+    position: absolute;
+    background-color: white;
+
+}
+
+.main_page .effect::before{
+    top: 100%;
+    right: 0;
+    transform: translateY(50%);
+}
+
+.main_page .effect::after{
+    left: 0;    
+    bottom: 100%;
+    transform: translateY(-50%);
+}
+
+.main_page .effect div{}
+
+.main_page .effect div::before,
+.main_page .effect div::after{
+    content: "";
+    width: 350px;
+    height: 6px;
+    position: absolute;
+    background-color: white;
+}
+
+.main_page .effect div::before{
+    top: 0;
+    left: 0;
+    transform: translateX(150%);
+}
+
+.main_page .effect div::after{
+    bottom: 0;
+    right: 0;
+    transform: translateX(-150%);
+}
+
+.move_box:hover .effect::before{
+    transform: translateY(-100%);
+}
+.move_box:hover .effect::after{
+    transform: translateY(100%);
+}
+.move_box:hover .effect div::before,
+.move_box:hover .effect div::after{
+    transform: translate(0,0);
+}
+
+
+
+
+
+
+
+/* Profile ------------------- */
+.main_page .Profile{
+    text-align: center;
+}
+
+.main_page .Profile div{}
+
+.main_page .Profile div a{}
+
+.main_page .Profile div a h2{}
+
+.main_page .Profile a .picture{
+    width: 200px;
+    height: 200px;
+    border: 2px solid aqua;
+    margin: 0 auto 30px;
+}
+
+.main_page .Profile a p{
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* Design ------------------- */
+.main_page .Design{}
+
+.main_page .Design > div{}
+
+.main_page .Design > div a{
+    display: block;
+}
+
+.main_page .Design > div a h2{}
+
+.main_page .Design > div a div{
+    width: 100%;
+    height: 85%;
+    background: url(../img/이미지/포토샵/상세\ 페이지목업1-완-.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+    text-indent: -9999px;
+    border-radius: 10px;
+}
+
+.main_page .Design > div:hover a div{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Figma ------------------- */
+.main_page .Figma{}
+
+.main_page .Figma ul{}
+
+.main_page .Figma ul li{
+    border: 1px solid violet;
+    width: 135px;
+    height: 135px;
+}
+
+.main_page .Figma > div a div{
+    width: 100%;
+    height: 85%;
+    background: url(../img/이미지/피그마/프로젝트\ 목업1.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+    text-indent: -9999px;
+    border-radius: 10px;
+}
+
+.main_page .Figma > div:hover a div{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Web ------------------- */
+.main_page .Web{} 
+
+.main_page .Web ul{}
+
+.main_page .Web ul li{   
+    border: 1px solid violet;
+    width: 135px;
+    height: 135px;
+}
+
+.main_page .Web > div a div{
+    width: 100%;
+    height: 85%;
+    background: url(../img/이미지/코딩/넥슨/넥슨\ PC\ 목업.png) no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+    text-indent: -9999px;
+    border-radius: 10px;
+}
+
+.main_page .Web > div:hover a div{
+    opacity: 1;
+}
