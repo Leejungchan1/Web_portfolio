@@ -65,7 +65,7 @@
 }
 
 .main .main_inner .content .left .top{
-    text-align: center;
+    text-align: left;
     font-size: 25px;
 }
 
@@ -84,7 +84,11 @@
 }
 
 .main .main_inner .content .left .mid span{
+    display: block;
     font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    margin-top: 50px;
 }
 
 .main .main_inner .content .left .mid .icon{

@@ -3,7 +3,7 @@ $(function(){
         rows:1,
         dots: true,
         arrows: true,
-
+        draggable:false,
     });
 
     $(".r_slide").slick({
