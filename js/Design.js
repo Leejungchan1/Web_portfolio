@@ -9,7 +9,8 @@ $(function(){
     $(".r_slide").slick({
         arrows: true,
         draggable:false,
-        fade: true
+        fade: true,
+        autoplay:1500,
     });
 
     $(".popup").hide();
