@@ -69,6 +69,10 @@
     font-size: 25px;
 }
 
+.main .main_inner .content .left .top p{
+    text-indent: -99999px;
+}
+
 .main .main_inner .content .left .mid{
     display: block;
     margin: 30px 0;
