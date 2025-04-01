@@ -7,16 +7,32 @@ $(function(){
         customPaging: function (slider, i) {
             var thumb = $(slider.$slides[i]).data();
             if (i == '0') {
-                i = "Detail Page";
+                i = "Hanatour <br> ZEUS world";
             } else if (i == '1') {
-                i = "HomePage <br> Re-design";
+                i = "DAOL <br> COMPANY";
             } else if (i == '2') {
-                i = "HomePage <br> Re-design";
+                i = "McDonald";
             } else if (i == '3') {
-                i = "Package <br> Design";
+                i = "Canon";
             } else if (i == '4') {
-                i = "Hwatu <br> Re-design"
-            };
+                i = "HOLLYS <br> COFFEE";
+            } else if (i == '5') {
+                i = "Coffine <br> Gurunaru";
+            } else if (i == '6') {
+                i = "INDIGO";
+            } else if (i == '7') {
+                i = "Green <br> Hospital";
+            } else if (i == '8') {
+                i = "Tcg 카드숍";
+            } else if (i == '9') {
+                i = "Architecture";
+            } else if (i == '10') {
+                i = "NEXON";
+            } else if (i == '11') {
+                i = "Nakwon";
+            } else if (i == '12') {
+                i = "Starbucks Korea";
+            }
             return '<a class="dot"><span>' + i + '</span></a>';
         }
     });

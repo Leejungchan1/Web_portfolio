@@ -7,16 +7,10 @@ $(function(){
         customPaging: function (slider, i) {
             var thumb = $(slider.$slides[i]).data();
             if (i == '0') {
-                i = "Detail Page";
+                i = "UI / UX <br> DESIGN";
             } else if (i == '1') {
-                i = "HomePage <br> Re-design";
-            } else if (i == '2') {
-                i = "HomePage <br> Re-design";
-            } else if (i == '3') {
-                i = "Package <br> Design";
-            } else if (i == '4') {
-                i = "Hwatu <br> Re-design"
-            };
+                i = "UI / UX <br> DESIGN";
+            }
             return '<a class="dot"><span>' + i + '</span></a>';
         }
     });
@@ -33,15 +27,15 @@ $(function(){
 
     $(".popup").hide();
 
+    
+    $(".button").click(function(){
+        $(".popup").fadeOut();
+    })
+    
     $(".link").click(function() {
         var index = $(this).attr('class').match(/\d+/)[0];
         $(".popup-" + index).fadeIn();
     });
-
-    $(".button").click(function(){
-        $(".popup").fadeOut();
-    })
-
 
     $(document).mouseup(function (e) { 
         var container = $(".popup");

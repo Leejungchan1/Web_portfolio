@@ -8,17 +8,24 @@
 .wrap .back{
     position: absolute;
     top: 3%;
-    right: 1%;
+    right: 0.5%;
     border: none;
     background-color: transparent;
-}
 
-.wrap .back a{
     display: block;
-    padding: 20px;
+    padding: 15px;
     color: white;
     border: 1px solid white;
     transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    border-radius: 5%;
+}
+
+.wrap .back:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    
 }
 
 .wrap .back a:hover{
@@ -69,7 +76,8 @@
     font-size: 25px;
 }
 
-.main .main_inner .content .left .top p{
+.main .main_inner .content .left .top h2 > span{
+    display: block;
     text-indent: -99999px;
 }
 
@@ -114,27 +122,32 @@
 
 
 
-.main .main_inner .content .left .link{
+.main .main_inner .content .left .bottom{
     height: 10%;
+}
 
+.main .main_inner .content .left .bottom h4{
+    margin-left: 9px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main .main_inner .content .left .bottom .all_links{
     display: flex;
     align-items: center;
 }
 
-
-.main .main_inner .content .left .link li{
-    margin-right: 3px;
-}
-
-.main .main_inner .content .left .link li a{
+.main .main_inner .content .left .bottom .all_links .link a{
     display: block;
     width: 50px;
     height: 50px;
     font-size: 12px;
     text-align: center;
+    /* letter-spacing: 0.5px */
 }
 
-.main .main_inner .content .left .link li a img{
+.main .main_inner .content .left .bottom .all_links .link a img{
     margin: 0 auto;
     width: 70%;
     height: 70%;
@@ -250,11 +263,8 @@
 .main_inner .slick-dots{
     position: absolute;
     top: 50%;
-    right: -10%;
-    transform: translateY(-620%);
-    width: 50px;
-    height: 40px;
-    line-height: 40px;
+    right: -10.5%;
+    transform: translateY(-50%);
     text-align: center;
 
     display: flex;
@@ -262,29 +272,32 @@
 }
 
 .main_inner .slick-dots li{
-    background-color: rgba(0, 0, 0, 0.2);
-    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: white;
-    padding: 0 25px;
-    height: 40px;
-    line-height: 75px;
+    padding: 0 5px;
+    width: 85px;
+    height: 45px;
     cursor: pointer;
+    font-size: 12px;
     transition: all 0.1s;
-    text-indent: -99999px;
-    background: url(../img/dots\ img\ off.png) no-repeat center;
     background-size: contain;
     margin-bottom: 5px;
-    border-radius: 50%;
-    border: 1px solid  black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.main_inner .slick-dots li:hover{
+    background-color: white;
+    color: black;
 }
 
 .main_inner .slick-dots li.slick-active{
-    background: url(../img/dot\ img\ on.png) no-repeat center;
-    background-color: rgba(0, 0, 0, 0.5) no-repeat center;
-    background-size: contain;
+    background-color:white;
+    color: black;
 }
-
-
 
 .main_inner > .slick-arrow{
     position: absolute;

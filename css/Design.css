@@ -8,20 +8,20 @@
 .wrap .back{
     position: absolute;
     top: 3%;
-    right: 1%;
+    right: 0.5%;
     border: none;
     background-color: transparent;
-}
 
-.wrap .back a{
     display: block;
-    padding: 20px;
+    padding: 15px;
     color: white;
     border: 1px solid white;
     transition: all 0.3s ease-in-out;
+    font-size: 14px;
+    border-radius: 5%;
 }
 
-.wrap .back a:hover{
+.wrap .back:hover{
     border: 1px solid black;
     background-color: white;
     color: black;
@@ -69,7 +69,8 @@
     padding: 0 10px;
 }
 
-.main .main_inner .content .left .top h2 > p{
+.main .main_inner .content .left .top h2 > span{
+    display: block;
     text-indent: -99999px;
 }
 
@@ -106,19 +107,24 @@
     object-fit: fill;
 }
 
-.main .main_inner .content .left .link{
+.main .main_inner .content .left .bottom{
     height: 10%;
+    margin-left: 10px;
+}
 
+.main .main_inner .content .left .bottom h4{
+    margin-left: 4px;
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.main .main_inner .content .left .bottom .all_links{
     display: flex;
     align-items: center;
 }
 
-
-.main .main_inner .content .left .link li{
-    margin-left: 10px;
-}
-
-.main .main_inner .content .left .link li a{
+.main .main_inner .content .left .bottom .all_links .link a{
     display: block;
     width: 50px;
     height: 50px;
@@ -127,7 +133,7 @@
     /* letter-spacing: 0.5px */
 }
 
-.main .main_inner .content .left .link li a img{
+.main .main_inner .content .left .bottom .all_links .link a img{
     margin: 0 auto;
     width: 90%;
     height: 90%;
@@ -174,6 +180,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
 }
 
 
@@ -183,6 +190,11 @@
     object-fit: cover;
     width: 400px;
     margin: 0 auto;
+    transition: all 0.3s;
+}
+
+.main_inner .content .popup-1 li img:hover{
+    width: 700px;
 }
 
 .main_inner .content .popup-2 li img{
@@ -233,11 +245,8 @@
 .main_inner .slick-dots{
     position: absolute;
     top: 50%;
-    right: -10%;
-    transform: translateY(-275%);
-    width: 50px;
-    height: 40px;
-    line-height: 40px;
+    right: -10.5%;
+    transform: translateY(-50%);
     text-align: center;
 
     display: flex;
@@ -245,26 +254,31 @@
 }
 
 .main_inner .slick-dots li{
-    background-color: rgba(0, 0, 0, 0.2);
-    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     color: white;
-    padding: 0 25px;
-    height: 40px;
-    line-height: 75px;
+    padding: 0 5px;
+    width: 85px;
+    height: 45px;
     cursor: pointer;
+    font-size: 12px;
     transition: all 0.1s;
-    text-indent: -99999px;
-    background: url(../img/dots\ img\ off.png) no-repeat center;
     background-size: contain;
     margin-bottom: 5px;
-    border-radius: 50%;
-    border: 1px solid  black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.main_inner .slick-dots li:hover{
+    background-color: white;
+    color: black;
 }
 
 .main_inner .slick-dots li.slick-active{
-    background: url(../img/dot\ img\ on.png) no-repeat center;
-    background-color: rgba(0, 0, 0, 0.5) no-repeat center;
-    background-size: contain;
+    background-color:white;
+    color: black;
 }
 
 .main_inner > .slick-arrow{
@@ -273,7 +287,6 @@
     top: 50%;
     transform: translate(-50%,-50%);
     border: none;
-    /* background-color: transparent; */
     cursor: pointer;
     width: 50px;
     height: 100px;
