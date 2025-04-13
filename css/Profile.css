@@ -39,7 +39,7 @@
 .main{
     width: 85%;
     height: 90%;
-    background-color: rgba(59, 59, 59, 0.8);
+    background-color: rgba(14, 14, 22, 0.8);
     position: absolute;
     left: 50%;
     top: 50%;
@@ -66,14 +66,15 @@
 
 .main .main_inner .content .left{
     width: 30%;
-    height: 797px;
+    /* height: 797px; */
+    height: 100%;
     float: left;
     padding: 70px 20px;
 }
 
 .main .main_inner .content .left h2{
     text-align: center;
-    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 30px black;
     font-size: 20px;
 }
 
@@ -81,7 +82,7 @@
     margin: 0 auto;
     width: 75%;
     text-align: center;
-    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 25px black;
 }
 
 .main .main_inner .content .left .picture{
@@ -112,14 +113,14 @@
 }
 
 .main .main_inner .content .right > div{
-    padding: 50px;
+    padding: 35px 50px;
 }
 
 .main .main_inner .content .right > div h3{
     font-size: 25px;
     margin-bottom: 30px;
 
-    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 20px black;
 }
 
 .main .main_inner .content .right > div p{
@@ -135,13 +136,17 @@
     margin-right: 20px;
 }
 
-.main .main_inner .content .right .profile{}
+.main .main_inner .content .right .profile{
+    /* padding: 0 50px; */
+}
 
 .main .main_inner .content .right .profile p a{
     border-bottom: 1px solid white;
 }
 
-.main .main_inner .content .right .skill{}
+.main .main_inner .content .right .skill{
+    /* padding: 0 50px; */
+}
 
 .main .main_inner .content .right .skill .skill_in{}
 
@@ -154,9 +159,13 @@
     margin-left: 10px;
 }
 
-.main .main_inner .content .right .Education{}
+.main .main_inner .content .right .Education{
+    /* padding: 90px 50px; */
+}
 
-.main .main_inner .content .right .Certificate{}
+.main .main_inner .content .right .Certificate{
+    /* padding: 90px 50px; */
+}
 
 
 
