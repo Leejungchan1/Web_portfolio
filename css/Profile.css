@@ -70,6 +70,7 @@
     height: 100%;
     float: left;
     padding: 70px 20px;
+    
 }
 
 .main .main_inner .content .left h2{
@@ -133,11 +134,16 @@
 .main .main_inner .content .right > div p span{
     font-size: 18px;
     font-weight: 600;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 .main .main_inner .content .right .profile{
     /* padding: 0 50px; */
+}
+
+.main .main_inner .content .right .profile p span{
+    display: inline-block;
+    width: 60px;
 }
 
 .main .main_inner .content .right .profile p a{

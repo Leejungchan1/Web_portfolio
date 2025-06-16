@@ -69,6 +69,7 @@
     background-color: rgb(255, 255, 255);
     float: left;
     padding: 20px;
+    border-radius: 10px 0 0 10px;
 }
 
 .main .main_inner .content .left .top{
@@ -85,7 +86,7 @@
     display: block;
     margin: 30px 0 20px 0;
     width: 100%;
-    height: 68%;
+    height: 48%;
     padding: 10px;
 }
 
@@ -119,23 +120,86 @@
     margin-top: 12px;
 }
 
+.main .main_inner .content .left .mid p strong{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
+
+.main .main_inner .content .left .move_site{
+    padding: 0 0 0 10px;
+    font-size: 13px;
+}
+
+.main .main_inner .content .left .move_site a{
+
+}
+
+.main .main_inner .content .left .move_site a span{
+    display: inline-block;
+}
+
+
+.main .main_inner .content .left .move_site a img{
+    width: 10px;
+    margin-right: 7px;
+    object-fit: contain;
+    margin-bottom: 2px;
+    display: inline-block;
+
+    transition: transform 0.3s ease-out;
+}
+
+.main .main_inner .content .left .move_site a:hover img {
+    animation-name: arrowmove;
+    animation-iteration-count: infinite;
+    animation-duration: 0.8s; /* 속도조절 */
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+
+}
+
+.main .main_inner .content .left .move_site a:hover span{
+    text-shadow: 0 0 5px black,0 0 10px black,0 0 15px black,0 0 20px black,0 0 25px black
+    ,0 0 30px black,0 0 40px black;
+    color: white;
+}
+
+@keyframes arrowmove {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(30%);
+    }
+
+    0% {
+        transform: translateX(0);
+    }
+}
+
+
 
 
 
 .main .main_inner .content .left .bottom{
-    height: 10%;
+    height: 12%;
+    margin-top: 130px;
 }
 
 .main .main_inner .content .left .bottom h4{
     margin-left: 9px;
-    margin-bottom: 5px;
-    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: 900;
     font-size: 14px;
 }
 
 .main .main_inner .content .left .bottom .all_links{
     display: flex;
     align-items: center;
+    margin-left: 5px;
 }
 
 .main .main_inner .content .left .bottom .all_links .link a{
@@ -144,7 +208,13 @@
     height: 50px;
     font-size: 12px;
     text-align: center;
+    opacity: 0.6;
+    margin-right: 10px;
     /* letter-spacing: 0.5px */
+}
+
+.main .main_inner .content .left .bottom .all_links .link a:hover{
+    opacity: 1;
 }
 
 .main .main_inner .content .left .bottom .all_links .link a img{
@@ -152,6 +222,12 @@
     width: 70%;
     height: 70%;
     margin-bottom: 3px;
+    transition: all 0.1s ease-in-out;
+}
+
+.main .main_inner .content .left .bottom .all_links .link a:hover img{
+    width: 80%;
+    height: 80%;
 }
 
 .main .main_inner .content .right{
@@ -174,6 +250,7 @@
     height: 797px;
     object-fit: cover;
     text-align: center;
+    border-radius: 0 10px 10px 0;
 }
 
 .main_inner .contents1 .right{}
